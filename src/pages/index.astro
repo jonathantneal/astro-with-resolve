@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+	<main>
+		<h1>
+			<marquee>Bowser’s Page</marquee>
+		</h1>
+		<p style="background:linear-gradient(0deg,#c44b1e,#3a2c1d,#000000)">
+			<img src={Astro.resolve('../assets/mario_vs_bowser_by_solmatter.jpg')} alt="Bowser, King of the Koopa" />
+		</p>
+		<p>
+			Rawr!
+		</p>
+		<p>
+			I used <code>Astro.resolve()</code> to beat Mario. It worked and I won.
+		</p>
+		<p>
+			Now I will fight Wart who was my father and be the winner of every game!
+		</p>
+		<p>
+			Your friend,<br />
+			King Koopa (and my friends call me.. Bowser!!!)
+		</p>
+	</main>
+	<style>
+	html {
+		background: black;
+		color: yellow;
+	}
+	body {
+		font: 150%/1.5 "Super Mario", fantasy;
+	}
+	h1, p:not([style]), img {
+		display: block;
+		margin: 1em auto;
+		max-width: 66rem;
+	}
+	img {
+		height: auto;
+		width: 100%;
+	}
+	</style>
+</body>
+
+</html>

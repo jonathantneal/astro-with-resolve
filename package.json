@@ -1,0 +1,14 @@
+{
+	"name": "astro-with-resolve",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"start": "astro dev",
+		"build": "astro build",
+		"prepare": "node .task/patch.js"
+	},
+	"devDependencies": {
+		"astro": "0.18.9"
+	}
+}
